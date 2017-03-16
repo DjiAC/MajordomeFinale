@@ -2,6 +2,61 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#8c8c8c">
+    <View
+        android:id="@+id/emptySpace"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/navBarContainer"
+        android:background="#FFF"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingRight="2dp">
+            <ImageButton
+                android:src="@drawable/restaurant"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkRestaurant"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp">
+            <ImageButton
+                android:src="@drawable/majordome_logo"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkAccount"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingLeft="2dp">
+            <ImageButton
+                android:src="@drawable/route"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkRoute"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

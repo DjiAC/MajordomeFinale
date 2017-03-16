@@ -23,5 +23,5 @@ namespace MajordomeFinale
 
             Content = button;
         }
-    }
+    }    
 }

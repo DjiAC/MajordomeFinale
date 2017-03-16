@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -12,14 +11,15 @@ using Android.Widget;
 
 namespace MajordomeFinale.Droid
 {
-    [Activity(Label = "RestaurantActivity")]
+    [Activity(Label = "Restaurant", MainLauncher = false, Theme = "@style/android:Theme.Holo.Light.NoActionBar")]
     public class RestaurantActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here
+            // Set our view from the "Restaurant" layout resource
+            SetContentView(Resource.Layout.Restaurant);
         }
     }
 }

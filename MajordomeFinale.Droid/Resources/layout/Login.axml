@@ -17,11 +17,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
+        android:id="@+id/Welcome"
         android:textColor="#FFFFFF"
         android:textStyle="normal"
         android:textSize="50px"
-        android:layout_marginTop="20.0dp"
+        android:layout_marginTop="10.0dp"
         android:gravity="center" />
     <EditText
         android:layout_width="match_parent"
@@ -29,13 +29,14 @@
         android:id="@+id/LoginEntry"
         android:hint="@string/TapeLogin"
         android:textStyle="italic"
-        android:layout_marginTop="30.0dp" />
+        android:layout_marginTop="15.0dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PasswordEntry"
         android:hint="@string/TapePassword"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:password="true" />
     <Button
         android:text="@string/LoginButton"
         android:layout_width="match_parent"
