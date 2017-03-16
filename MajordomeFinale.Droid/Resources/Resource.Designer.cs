@@ -26,7 +26,6 @@ namespace MajordomeFinale.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::ModernHttpClient.Resource.String.library_name = global::MajordomeFinale.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -49,16 +48,19 @@ namespace MajordomeFinale.Droid
 			public const int border = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int Majordome_Logo = 2130837505;
+			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Majordome_Logo = 2130837506;
+			public const int imad = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Route = 2130837507;
+			public const int Majordome_Logo = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Route = 2130837508;
+			public const int Restaurant = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Route = 2130837509;
 			
 			static Drawable()
 			{
@@ -73,32 +75,44 @@ namespace MajordomeFinale.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050004
-			public const int LoginEntry = 2131034116;
+			// aapt resource value: 0x7f050008
+			public const int LoginEntry = 2131034120;
 			
-			// aapt resource value: 0x7f050005
-			public const int MyButton = 2131034117;
+			// aapt resource value: 0x7f05000c
+			public const int MyButton = 2131034124;
 			
-			// aapt resource value: 0x7f050002
-			public const int WelcomeLogo = 2131034114;
+			// aapt resource value: 0x7f050009
+			public const int PasswordEntry = 2131034121;
+			
+			// aapt resource value: 0x7f050007
+			public const int Welcome = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int WelcomeLogo = 2131034118;
 			
 			// aapt resource value: 0x7f050001
-			public const int imageView1 = 2131034113;
-			
-			// aapt resource value: 0x7f050001
-			public const int Welcome = 2131034113;
+			public const int emptySpace = 2131034113;
 			
 			// aapt resource value: 0x7f050000
-			public const int linearLayout1 = 2131034112;
+			public const int imageView1 = 2131034112;
 			
 			// aapt resource value: 0x7f050004
-			public const int loginButton = 2131034116;
+			public const int linkAccount = 2131034116;
 			
-			// aapt resource value: 0x7f050001
-			public const int textView1 = 2131034113;
+			// aapt resource value: 0x7f050003
+			public const int linkRestaurant = 2131034115;
 			
 			// aapt resource value: 0x7f050005
-			public const int textView1 = 2131034117;
+			public const int linkRoute = 2131034117;
+			
+			// aapt resource value: 0x7f05000a
+			public const int loginButton = 2131034122;
+			
+			// aapt resource value: 0x7f050002
+			public const int navBarContainer = 2131034114;
+			
+			// aapt resource value: 0x7f05000b
+			public const int textView1 = 2131034123;
 			
 			static Id()
 			{
@@ -141,26 +155,26 @@ namespace MajordomeFinale.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int ApplicationName = 2130968578;
-			
 			// aapt resource value: 0x7f040001
-			public const int Hello = 2130968577;
-			
-			// aapt resource value: 0x7f040004
-			public const int LoginButton = 2130968580;
-			
-			// aapt resource value: 0x7f040005
-			public const int TapeLogin = 2130968581;
+			public const int ApplicationName = 2130968577;
 			
 			// aapt resource value: 0x7f040006
-			public const int TapePassword = 2130968582;
-			
-			// aapt resource value: 0x7f040003
-			public const int Welcome = 2130968579;
+			public const int FunctionTBD = 2130968582;
 			
 			// aapt resource value: 0x7f040000
-			public const int library_name = 2130968576;
+			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int LoginButton = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int TapeLogin = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int TapePassword = 2130968581;
+			
+			// aapt resource value: 0x7f040002
+			public const int Welcome = 2130968578;
 			
 			static String()
 			{

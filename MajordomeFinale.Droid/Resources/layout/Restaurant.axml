@@ -6,29 +6,11 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#8c8c8c">
-    <ScrollView
-          android:minWidth="25px"
-          android:minHeight="25px"
-          android:layout_width="match_parent"
-          android:layout_height="495"
-          android:id="@+id/scrollView1">
-      <GridLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:id="@+id/gridLayout1">
-        <ImageButton
-            android:src="@android:drawable/ic_menu_gallery"
-            android:id="@+id/imageButton1"
-            android:layout_height="80"
-            android:layout_width="80" />
-        <TextView
-            android:text="Medium Text"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="80" />
-      </GridLayout>
-    </ScrollView>
+    <ImageView
+        android:src="@drawable/restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="245.0dp"
+        android:id="@+id/imageView1" />
     <View
         android:id="@+id/emptySpace"
         android:layout_width="fill_parent"

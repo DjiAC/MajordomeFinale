@@ -30,17 +30,15 @@ namespace MajordomeFinale.Droid
             Button loginButton = FindViewById<Button>(Resource.Id.loginButton);
 
             //Login button click action
-            loginButton.Click += BtnLogin_Click;
+            loginButton.Click += BtnLogin_Click;            
 
             var varloginEntry = FindViewById<EditText>(Resource.Id.LoginEntry);
-
             varloginEntry.TextChanged += (object sender, Android.Text.TextChangedEventArgs e) =>
             {
                 loginEntry = e.Text.ToString();
             };
 
             var varpasswordEntry = FindViewById<EditText>(Resource.Id.PasswordEntry);
-
             varpasswordEntry.TextChanged += (object sender, Android.Text.TextChangedEventArgs e) =>
             {
                 passwordEntry = e.Text.ToString();
@@ -48,12 +46,13 @@ namespace MajordomeFinale.Droid
         }
 
         private void BtnLogin_Click(object sender, EventArgs e)
-        {
+        {   
             String WebService = CallWebService.CallWebServiceMajordome(loginEntry, passwordEntry, "Login", "").Result;
 
             if (WebService == "{\"result\":\"OK\",\"code\":\"0\"}")
             {
                 Toast.MakeText(this, "Login succesful !", ToastLength.Short).Show();
+
                 var activityRestaurant = new Intent(this, typeof(RestaurantActivity));
                 StartActivity(activityRestaurant);
             }

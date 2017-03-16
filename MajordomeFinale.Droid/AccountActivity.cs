@@ -12,8 +12,8 @@ using Android.Widget;
 
 namespace MajordomeFinale.Droid
 {
-    [Activity(Label = "Route", MainLauncher = false, Theme = "@style/android:Theme.Holo.Light.NoActionBar")]
-    public class RouteActivity : Activity
+    [Activity(Label = "Account", MainLauncher = false, Theme = "@style/android:Theme.Holo.Light.NoActionBar")]
+    public class AccountActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,24 +22,24 @@ namespace MajordomeFinale.Droid
             // Set our view from the "Route" layout resource
             SetContentView(Resource.Layout.Restaurant);
 
-            ImageButton linkAccount = FindViewById<ImageButton>(Resource.Id.linkAccount);
+            ImageButton linkRoute = FindViewById<ImageButton>(Resource.Id.linkRoute);
             //Login button click action
-            linkAccount.Click += BtnlinkAccount_Click;
+            linkRoute.Click += BtnlinkRoute_Click;
 
             ImageButton linkRestaurant = FindViewById<ImageButton>(Resource.Id.linkRestaurant);
             //Login button click action
             linkRestaurant.Click += BtnlinkRestaurant_Click;
         }
 
-        private void BtnlinkAccount_Click(object sender, EventArgs e)
+        private void BtnlinkRoute_Click(object sender, EventArgs e)
         {
 
             // String WebService = CallWebService.CallWebServiceMajordome(loginEntry, passwordEntry, "Login", "").Result;
 
-            Toast.MakeText(this, "Heading to your account !", ToastLength.Short).Show();
+            Toast.MakeText(this, "Heading to route proposal !", ToastLength.Short).Show();
 
-            var activityAccount = new Intent(this, typeof(AccountActivity));
-            StartActivity(activityAccount);
+            var activityRoute = new Intent(this, typeof(RouteActivity));
+            StartActivity(activityRoute);
         }
 
         private void BtnlinkRestaurant_Click(object sender, EventArgs e)
