@@ -3,5 +3,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:text="Restaurant"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="30"
+        android:layout_marginLeft="30"
+        android:layout_marginBottom="20" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="495"
+        android:id="@+id/scrollView1">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayout1">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/imageButton1"
+                android:layout_height="80"
+                android:layout_width="80" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="80" />
+        </GridLayout>
+    </ScrollView>
 </LinearLayout>
