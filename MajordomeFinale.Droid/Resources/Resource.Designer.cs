@@ -106,6 +106,12 @@ namespace MajordomeFinale.Droid
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
 			
+			// aapt resource value: 0x7f030002
+			public const int Restaurant = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Route = 2130903043;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
