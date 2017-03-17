@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#8c8c8c">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0">
+        <ImageView
+            android:src="@drawable/badgecup"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badgeCup"
+            android:layout_margin="10dp"
+            android:layout_gravity="left" />
+        <TextView
+            android:text="Badge Cup : You reached 5 badges !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadgeCup"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0"
+        android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/badgefire"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badgeFire"
+            android:layout_margin="10dp"
+            android:layout_gravity="left" />
+        <TextView
+            android:text="Badge Fire : You run through a Route !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadgeFire"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0"
+        android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/badgemap"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badgeMap"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Badge Map : You used the Route's Map"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadgeMap"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0"
+        android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/badgemessage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badgeMessage"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Badge Message : You send 5 Messages on GoldenBook"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadgeMessage"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0"
+        android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/badgerunner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badgeRunner"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Badge Runner : You finished a Route"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadgeRunner"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/badgesDescription"
+        android:background="#F0f0f0"
+        android:layout_gravity="left">
+        <ImageView
+            android:src="@drawable/badge90complete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/badge90complete"
+            android:layout_margin="10dp" />
+        <TextView
+            android:text="Badge 90% Complete : Your reached 90% of the badges !"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlebadge90complete"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/emptySpace"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/navBarContainer"
+        android:background="#FFF"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingRight="2dp">
+            <ImageButton
+                android:src="@drawable/restaurant"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkRestaurant"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp">
+            <ImageButton
+                android:src="@drawable/majordome_logo"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkAccount"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:paddingLeft="2dp">
+            <ImageButton
+                android:src="@drawable/route"
+                android:scaleType="fitCenter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkRoute"
+                android:background="@drawable/border" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

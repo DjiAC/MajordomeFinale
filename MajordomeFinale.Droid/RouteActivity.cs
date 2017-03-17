@@ -15,12 +15,18 @@ namespace MajordomeFinale.Droid
     [Activity(Label = "Route", MainLauncher = false, Theme = "@style/android:Theme.Holo.Light.NoActionBar")]
     public class RouteActivity : Activity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        public string loginEntry;
+        public string passwordEntry;
+
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
+            base.OnCreate(bundle);
 
             // Set our view from the "Route" layout resource
-            SetContentView(Resource.Layout.Restaurant);
+            SetContentView(Resource.Layout.Route);
+
+            loginEntry = Intent.GetStringExtra("loginTransmission") ?? "Login not available";
+            passwordEntry = Intent.GetStringExtra("passwordTransmission") ?? "Password not available";
 
             ImageButton linkAccount = FindViewById<ImageButton>(Resource.Id.linkAccount);
             //Login button click action
@@ -39,6 +45,8 @@ namespace MajordomeFinale.Droid
             Toast.MakeText(this, "Heading to your account !", ToastLength.Short).Show();
 
             var activityAccount = new Intent(this, typeof(AccountActivity));
+            activityAccount.PutExtra("loginTransmission", loginEntry);
+            activityAccount.PutExtra("passwordTransmission", passwordEntry);
             StartActivity(activityAccount);
         }
 
@@ -50,6 +58,8 @@ namespace MajordomeFinale.Droid
             Toast.MakeText(this, "Heading to Restaurants page !", ToastLength.Short).Show();
 
             var activityRestaurant = new Intent(this, typeof(RestaurantActivity));
+            activityRestaurant.PutExtra("loginTransmission", loginEntry);
+            activityRestaurant.PutExtra("passwordTransmission", passwordEntry);
             StartActivity(activityRestaurant);
         }
     }

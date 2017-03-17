@@ -6,5 +6,11 @@
     <string name="LoginButton">Login</string>
     <string name="TapeLogin">Login ...</string>
     <string name="TapePassword">Password ...</string>
+    <string name="fieldMail">Mail : </string>
+    <string name="fieldPassword">Password : </string>
+    <string name="fieldBirthdate">Birthdate : </string>
+    <string name="fieldBadges">Badge(s) : </string>
+    <string name="fieldRestaurants">Restaurant(s) : </string>
+    <string name="fieldFriends">Friend(s) : </string>
     <string name="FunctionTBD">Functionnality to be developed soon ! Come back later ;-)</string>
 </resources>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="nbperson">Choose the places to reserve</string>
+  <string-array name="nb_array">
+    <item>1 person</item>
+    <item>2 persons</item>
+    <item>3 persons</item>
+    <item>4 persons</item>
+    <item>5 persons</item>
+    <item>6 persons</item>
+  </string-array>
+</resources>

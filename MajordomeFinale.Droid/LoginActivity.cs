@@ -54,6 +54,8 @@ namespace MajordomeFinale.Droid
                 Toast.MakeText(this, "Login succesful !", ToastLength.Short).Show();
 
                 var activityRestaurant = new Intent(this, typeof(RestaurantActivity));
+                activityRestaurant.PutExtra("loginTransmission", loginEntry);
+                activityRestaurant.PutExtra("passwordTransmission", passwordEntry);
                 StartActivity(activityRestaurant);
             }
             else

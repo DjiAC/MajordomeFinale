@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/Header">
         <ImageView
-            android:src="@drawable/imad"
+            android:src="@drawable/jacob"
             android:id="@+id/accountPP"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -50,34 +50,13 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="20dp" />
             <TextView
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/accountMail"
                 android:layout_marginLeft="78dp"
-                android:layout_marginTop="30dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linePassword">
-            <TextView
-                android:text="@string/fieldPassword"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/fieldPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp" />
-            <TextView xmlns:tools="http://schemas.android.com/tools"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/accountPassword"
-                android:layout_marginLeft="40dp"
-                tools:visibility="visible"
-                android:password="true" />
+                android:layout_marginTop="30dp"
+                android:textSize="16px" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -93,11 +72,12 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp" />
             <TextView
-                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/accountBirthdate"
-                android:layout_marginLeft="50dp" />
+                android:layout_marginLeft="50dp"
+                android:textSize="16px" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -112,11 +92,12 @@
                 android:id="@+id/fieldBadges"
                 android:layout_marginLeft="20dp" />
             <TextView
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/accountBadges"
-                android:layout_marginLeft="50dp" />
+                android:layout_marginLeft="65dp"
+                android:textSize="18px" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -128,23 +109,12 @@
                 android:layout_width="0dip"
                 android:layout_height="40dp"
                 android:layout_weight="0.25"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/badge90complete"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/badge1"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.25"
-                android:paddingRight="2dp">
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px">
                 <ImageButton
                     android:src="@drawable/badgecup"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
                     android:id="@+id/badge2"
@@ -154,28 +124,31 @@
                 android:layout_width="0dip"
                 android:layout_height="40dp"
                 android:layout_weight="0.25"
-                android:paddingRight="2dp">
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px">
                 <ImageButton
-                    android:src="@drawable/badgemap"
-                    android:layout_width="match_parent"
+                    android:src="@drawable/badgemessage"
+                    android:layout_width="wrap_content"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
-                    android:id="@+id/badge3"
+                    android:id="@+id/badge4"
                     android:background="#00000000" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
                 android:layout_height="40dp"
                 android:layout_weight="0.25"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/badgemessage"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/badge4"
-                    android:background="#00000000" />
-            </RelativeLayout>
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px" />
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_weight="0.25"
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -194,7 +167,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/accountRestaurant"
-                android:layout_marginLeft="50dp" />
+                android:layout_marginLeft="65dp"
+                android:textSize="18px" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -206,41 +180,31 @@
                 android:layout_width="0dip"
                 android:layout_height="40dp"
                 android:layout_weight="0.33"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/epicurien"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/restaurant1"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.33"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/lecedre"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/restaurant2"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.33"
-                android:paddingRight="2dp">
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px">
                 <ImageButton
                     android:src="@drawable/tacosgrenoble"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
                     android:id="@+id/restaurant3"
                     android:background="#00000000" />
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_weight="0.33"
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px" />
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_weight="0.33"
+                android:paddingRight="2dp"
+                android:minWidth="25px"
+                android:minHeight="25px" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -254,6 +218,13 @@
                 android:layout_height="match_parent"
                 android:id="@+id/fieldFriends"
                 android:layout_marginLeft="20dp" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/accountFriends"
+                android:layout_marginLeft="65dp"
+                android:textSize="18px" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -267,7 +238,7 @@
                 android:layout_weight="0.3"
                 android:paddingRight="2dp">
                 <ImageButton
-                    android:src="@drawable/jacob"
+                    android:src="@drawable/imad"
                     android:scaleType="fitCenter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

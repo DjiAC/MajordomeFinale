@@ -14,19 +14,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/Header">
         <ImageView
-            android:src="@drawable/imad"
-            android:id="@+id/accountPP"
+            android:src="@drawable/epicurien"
+            android:id="@+id/restaurantPP"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp" />
         <TextView
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/accountLogin"
-            android:layout_marginTop="45dp"
+            android:id="@+id/restaurantName"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="100dp" />
     </LinearLayout>
     <LinearLayout
@@ -41,19 +41,20 @@
             android:layout_height="wrap_content"
             android:id="@+id/lineMail">
             <TextView
-                android:text="@string/fieldMail"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/fieldMail"
+                android:text="Cook Type :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/fieldCookType"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp" />
             <TextView
+                android:text="French Traditional"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/accountMail"
+                android:id="@+id/cookType"
                 android:layout_marginLeft="78dp"
                 android:layout_marginTop="30dp" />
         </LinearLayout>
@@ -61,119 +62,144 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/linePassword">
+            android:id="@+id/lineBudget"
+            android:layout_marginBottom="0.0dp">
             <TextView
-                android:text="@string/fieldPassword"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/fieldPassword"
+                android:text="Budget :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/fieldBudget"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="20dp" />
             <TextView xmlns:tools="http://schemas.android.com/tools"
+                      android:text="20 - 30 €"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/accountPassword"
+                android:id="@+id/budget"
                 android:layout_marginLeft="40dp"
-                tools:visibility="visible"
-                android:password="true" />
+                tools:visibility="visible" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lineBirthdate">
+            android:id="@+id/lineGrade">
             <TextView
-                android:text="@string/fieldBirthdate"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/fieldBirthdate"
+                android:text="Grade :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/fieldGrade"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+              android:text="4.8"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/grade"
+                android:layout_marginLeft="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linePhone">
+            <TextView
+                android:text="Phone :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/fieldPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
             <TextView
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/accountBirthdate"
+                android:id="@+id/phone"
                 android:layout_marginLeft="50dp" />
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lineBadges">
+            android:id="@+id/lineSchedule">
             <TextView
-                android:text="@string/fieldBadges"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/fieldBadges"
-                android:layout_marginLeft="20dp" />
-            <TextView
+                android:text="Schedule :"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/accountBadges"
+                android:id="@+id/fieldSchedule"
+                android:layout_marginLeft="20dp" />
+            <TextView
+              android:text="Every Day : 19h - 23h"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/schedule"
                 android:layout_marginLeft="50dp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
             android:orientation="horizontal"
-            android:id="@+id/badgesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lineLabels">
+            <TextView
+                android:text="Labels :"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/fieldLabels"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/labelsContainer"
             android:padding="5dp">
             <RelativeLayout
                 android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.25"
+                android:layout_height="25dp"
+                android:layout_weight="0.33"
                 android:paddingRight="2dp">
                 <ImageButton
-                    android:src="@drawable/badge90complete"
+                    android:src="@drawable/label_bio"
                     android:layout_width="match_parent"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
-                    android:id="@+id/badge1"
+                    android:id="@+id/label_bio"
                     android:background="#00000000" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.25"
+                android:layout_height="25dp"
+                android:layout_weight="0.33"
                 android:paddingRight="2dp">
                 <ImageButton
-                    android:src="@drawable/badgecup"
+                    android:src="@drawable/label_humain"
                     android:layout_width="match_parent"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
-                    android:id="@+id/badge2"
+                    android:id="@+id/label_humain"
                     android:background="#00000000" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.25"
+                android:layout_height="25dp"
+                android:layout_weight="0.33"
                 android:paddingRight="2dp">
                 <ImageButton
-                    android:src="@drawable/badgemap"
+                    android:src="@drawable/label_vegan"
                     android:layout_width="match_parent"
                     android:scaleType="fitCenter"
                     android:layout_height="wrap_content"
-                    android:id="@+id/badge3"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.25"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/badgemessage"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/badge4"
+                    android:id="@+id/label_vegan"
                     android:background="#00000000" />
             </RelativeLayout>
         </LinearLayout>
@@ -181,101 +207,20 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lineRestaurants">
-            <TextView
-                android:text="@string/fieldRestaurants"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/fieldRestaurants"
-                android:layout_marginLeft="20dp" />
-            <TextView
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/accountRestaurant"
-                android:layout_marginLeft="50dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:id="@+id/restaurantsContainer"
-            android:padding="5dp">
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.33"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/epicurien"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/restaurant1"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.33"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/lecedre"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/restaurant2"
-                    android:background="#00000000" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.33"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/tacosgrenoble"
-                    android:layout_width="match_parent"
-                    android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/restaurant3"
-                    android:background="#00000000" />
-            </RelativeLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lineFriends">
-            <TextView
-                android:text="@string/fieldFriends"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/fieldFriends"
-                android:layout_marginLeft="20dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:id="@+id/friendsContainer"
-            android:padding="5dp">
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="40dp"
-                android:layout_weight="0.3"
-                android:paddingRight="2dp">
-                <ImageButton
-                    android:src="@drawable/jacob"
-                    android:scaleType="fitCenter"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/friend1"
-                    android:background="#00000000" />
-            </RelativeLayout>
-        </LinearLayout>
+            android:id="@+id/lineFriends"
+            android:minWidth="25px"
+            android:minHeight="25px" />
     </LinearLayout>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:prompt="@string/nbperson" />
+    <Button
+        android:text="Reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reservation" />
     <View
         android:id="@+id/emptySpace"
         android:layout_width="fill_parent"
